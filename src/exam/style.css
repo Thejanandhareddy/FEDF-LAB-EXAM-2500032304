@@ -1,4 +1,122 @@
 
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin: 40px 0;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+nav {
+  background-color: gray;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+.add-product, .display-products, .api-demo {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.add-product form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+th, td {
+  border: 1px solid gray;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
@@ -7,22 +125,6 @@
   nav li {
     margin: 5px 0;
   }
-}
-
-
-.add-product form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.add-product div {
-  display: flex;
-  flex-direction: column;
-}
-
-
-@media (max-width: 600px) {
   table {
     font-size: 14px;
   }
@@ -30,30 +132,30 @@
     padding: 4px;
   }
 }
-
-
-b {
-  display: block;
-  padding: 20px;
-  text-align: center;
-  font-size: 18px;
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;              /* space between links */
+  background-color: grey; /* navbar background */
+  padding: 12px;
+  border-radius: 6px;
 }
 
-
-h1 {
-  color: #333;
-  font-size: 2.5em;
-  margin: 40px 0;
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-
-.api-demo table {
-    background-color: aqua;
-  margin-top: 0;
+.navbar a:hover {
+  color: #007bff; 
 }
 
-
-footer p {
-  margin: 0;
-  color: #666;
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 }
